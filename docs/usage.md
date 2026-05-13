@@ -33,3 +33,136 @@ Examples:
 30 seconds
 60 seconds
 120 seconds
+```
+
+A shorter interval causes activity more often.
+
+A longer interval causes activity less often.
+
+---
+
+## Mouse Movement Distance
+
+The movement distance defines how far the mouse pointer should be moved.
+
+A small movement is usually enough for most workflows.
+
+Recommended:
+
+```text
+1 - 5 pixels
+```
+
+---
+
+## Optional Auto-Click
+
+Mouse-Keeper includes an optional auto-click function.
+
+This function is disabled by default.
+
+Only enable auto-click when you really need it.
+
+Auto-click should only be used in situations where automatic clicking is appropriate and allowed.
+
+Do not use auto-click in applications, games, systems or environments where automated clicking is not permitted.
+
+---
+
+## Always On Top
+
+The always-on-top option can keep the Mouse-Keeper window visible above other windows.
+
+This can be useful when you want to monitor whether the tool is currently running.
+
+---
+
+## Transparency
+
+The transparency setting can make the application window less visually intrusive.
+
+This is useful when Mouse-Keeper should stay visible but not cover too much of the desktop.
+
+---
+
+## Themes
+
+Mouse-Keeper supports multiple color themes.
+
+Themes are visual only and do not change the core functionality.
+
+---
+
+## Typical Use Cases
+
+Mouse-Keeper can be useful for:
+
+- Long YouTube uploads
+- Long export tasks
+- Render jobs
+- Presentations
+- Monitoring dashboards
+- Kiosk or display workflows
+- Remote desktop sessions
+- Controlled waiting periods
+- Simple background activity workflows
+
+---
+
+## Safety Notes
+
+Use Mouse-Keeper responsibly.
+
+Important notes:
+
+- Use only on systems where you are allowed to run such tools.
+- Stop the tool when it is no longer needed.
+- Review the settings before starting it.
+- Be careful with the optional auto-click function.
+- Some company or managed IT environments may restrict tools that simulate activity.
+- Use only for legitimate workflows.
+
+---
+
+## Troubleshooting
+
+### The tool does not start
+
+Try the following:
+
+- Extract the ZIP file completely before starting the application.
+- Start the application from a local folder.
+- Check whether antivirus or Windows SmartScreen blocks the file.
+- Test the tool in a separate folder or test environment.
+
+### The PC still goes to sleep
+
+Check the following:
+
+- Windows power settings
+- Screen timeout settings
+- Sleep mode settings
+- Company device policies
+- Group Policy restrictions
+- Energy saving settings from manufacturer tools
+
+Mouse-Keeper can help reduce idle-related interruptions, but some system policies may still override local behavior.
+
+### Auto-click does not work as expected
+
+Check the following:
+
+- Auto-click is enabled only when needed.
+- The target application allows automated clicking.
+- The mouse pointer is positioned correctly.
+- No security policy blocks simulated input.
+
+---
+
+## Disclaimer
+
+This tool is provided as-is, without warranty of any kind.
+
+Use it at your own risk.
+
+The author is not responsible for unintended clicks, interrupted workflows, system issues, policy violations or damages caused by the use of this software.
