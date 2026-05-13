@@ -1,1 +1,53 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Build output
+build/
+dist/
+release/
+releases/
+*.egg-info/
+
+# Executables and release packages
+*.exe
+*.msi
+*.zip
+*.7z
+*.rar
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PyInstaller / py2exe output
+*.spec
+*.manifest
+
+# Local config / runtime files
+config.json
+settings.json
+*.local.json
