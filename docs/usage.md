@@ -4,7 +4,7 @@ This document explains the basic usage of **waltrone1 Mouse-Keeper**.
 
 waltrone1 Mouse-Keeper is a small Windows helper tool by **WALTRONE**.
 
-It is designed to help keep a Windows PC active during long-running tasks such as uploads, exports, render jobs, presentations, monitoring workflows or similar situations.
+It is designed to help keep a Windows PC active during long-running tasks such as uploads, exports, render jobs, presentations, monitoring workflows or similar situations where the system should remain active.
 
 ---
 
@@ -14,18 +14,30 @@ It is designed to help keep a Windows PC active during long-running tasks such a
 2. Extract the ZIP file completely.
 3. Start the application.
 4. Configure the activity interval.
-5. Configure the movement distance.
+5. Configure the mouse movement distance.
 6. Start Mouse-Keeper.
 7. Keep the application open while your long-running task is active.
 8. Pause or close the tool when it is no longer needed.
 
 ---
 
+## Main Workflow
+
+The typical workflow is:
+
+1. Start Mouse-Keeper.
+2. Choose how often activity should be triggered.
+3. Choose how far the mouse pointer should move.
+4. Optional: enable additional settings such as always-on-top or transparency.
+5. Start the activity mode.
+6. Let your long-running task continue.
+7. Stop Mouse-Keeper when the task is finished.
+
+---
+
 ## Activity Interval
 
 The activity interval defines how often Mouse-Keeper should perform its activity action.
-
-Use a reasonable interval depending on your workflow.
 
 Examples:
 
@@ -38,6 +50,8 @@ Examples:
 A shorter interval causes activity more often.
 
 A longer interval causes activity less often.
+
+Use a reasonable interval depending on your workflow and environment.
 
 ---
 
@@ -111,16 +125,17 @@ Mouse-Keeper can be useful for:
 
 ## Safety Notes
 
-Use Mouse-Keeper responsibly.
+Mouse-Keeper is intended as a small local helper tool.
 
 Important notes:
 
 - Use only on systems where you are allowed to run such tools.
-- Stop the tool when it is no longer needed.
+- Stop or pause the tool when it is no longer needed.
 - Review the settings before starting it.
 - Be careful with the optional auto-click function.
-- Some company or managed IT environments may restrict tools that simulate activity.
-- Use only for legitimate workflows.
+- Do not use auto-click in environments where automated clicking is not allowed.
+- Some company, school or managed IT environments may restrict tools that simulate activity.
+- Use responsibly and only for legitimate workflows.
 
 ---
 
