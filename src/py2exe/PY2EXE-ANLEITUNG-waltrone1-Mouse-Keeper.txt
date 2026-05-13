@@ -1,0 +1,126 @@
+PY2EXE-ORDNER FUER waltrone1 Mouse Keeper
+=========================================
+
+ZIEL
+----
+Dieser Ordner baut die EXE direkt aus dem Ordner .\py2exe.
+Die eigentlichen Programmdateien bleiben eine Ebene darueber im Projektordner.
+
+Standard-Metadaten:
+- Application version: 1.0.0.0
+- Build date: 2026-04-27
+- Website: https://waltrone1.de/wltones-admin-tools/
+- Contact: gwaltrone@gmail.com
+- Product: waltrone1 Admin Tools
+
+Ablage innerhalb von .\py2exe:
+- .\py2exe\.venv\       = virtuelle Python-Umgebung
+- .\py2exe\build\       = temporaere PyInstaller-Build-Dateien
+- .\py2exe\build_debug\ = temporaere Debug-Build-Dateien
+- .\py2exe\dist\        = fertige EXE-Dateien
+- .\py2exe\Installer\   = optionaler Inno-Setup-Installer
+
+Gewuenschte Struktur:
+
+waltrone1 Mouse Keeper
+|-- main.py
+|-- version_info.txt
+|-- waltrone1-Mouse-Keeper.ico
+|-- assets\
+|-- mousekeeper\
+`-- py2exe\
+    |-- build_exe_windows.bat
+    |-- build_exe_debug_console.bat
+    |-- start_test_windows.bat
+    |-- clean_build_windows.bat
+    |-- build_installer_inno.bat
+    |-- requirements.txt
+    |-- waltrone1_Mouse_Keeper_py2exe.spec
+    `-- waltrone1_Mouse_Keeper_InnoSetup.iss
+
+1) VORAUSSETZUNG
+----------------
+Windows 10/11 oder Windows Server.
+Python 3 von python.org installieren.
+
+Wichtig:
+- "Add python.exe to PATH" aktivieren
+- Python Launcher "py" aktivieren
+
+2) EXE BAUEN
+------------
+Im Windows Explorer in den Ordner .\py2exe wechseln und starten:
+
+build_exe_windows.bat
+
+Das Script erledigt automatisch:
+- pruefen, ob ..\main.py vorhanden ist
+- pruefen, ob ..\waltrone1-Mouse-Keeper.ico vorhanden ist
+- virtuelle Python-Umgebung in .\py2exe\.venv anlegen
+- pip, setuptools und wheel aktualisieren
+- PyInstaller und Pillow installieren
+- alte Build-Ausgaben in .\py2exe loeschen
+- EXE mit PyInstaller bauen
+- die EXE-Dateiversion aus ..\version_info.txt einbinden, wenn vorhanden
+
+3) ERGEBNIS
+-----------
+Nach erfolgreichem Build liegt die EXE hier:
+
+.\dist\waltrone1-Mouse-Keeper.exe
+
+Also aus Sicht des Projektordners:
+
+Projektordner\py2exe\dist\waltrone1-Mouse-Keeper.exe
+
+4) VORHER OHNE EXE TESTEN
+-------------------------
+start_test_windows.bat
+
+Das Script startet:
+
+..\main.py
+
+innerhalb der virtuellen Umgebung aus .\py2exe\.venv.
+
+5) DEBUG-BUILD
+--------------
+Wenn die normale EXE nicht startet oder sich direkt wieder schliesst:
+
+build_exe_debug_console.bat
+
+Danach die Debug-EXE aus einer CMD starten:
+
+.\dist\waltrone1-Mouse-Keeper_DEBUG.exe
+
+6) CLEAN BUILD
+--------------
+clean_build_windows.bat
+build_exe_windows.bat
+
+clean_build_windows.bat loescht nur Build-Ausgaben im Ordner .\py2exe:
+- .\build
+- .\build_debug
+- .\dist
+- .\Installer
+- automatisch erzeugte Debug-Spec-Dateien
+
+7) OPTIONAL: INSTALLER MIT INNO SETUP
+-------------------------------------
+1. Erst build_exe_windows.bat ausfuehren.
+2. Inno Setup installieren.
+3. build_installer_inno.bat starten.
+
+Ergebnis:
+
+.\py2exe\Installer\waltrone1-Mouse-Keeper-Setup-x64.exe
+
+8) HINWEIS ZU WINDOWS DEFENDER
+------------------------------
+Frisch gebaute, nicht signierte PyInstaller-EXEs koennen von Windows Defender oder SmartScreen gewarnt werden.
+Fuer groessere Verteilung ist Code-Signing sinnvoll.
+
+9) WICHTIG ZUR FUNKTIONALITAET
+------------------------------
+Dieser py2exe-Ordner baut nur die EXE bzw. optional den Installer.
+Er veraendert keine Mouse-Keeper-Funktionen.
