@@ -8,13 +8,11 @@ The tool is designed for users, creators, admins and technicians who want a simp
 
 ---
 
-## Screenshots
-
-The screenshot shows the main Mouse-Keeper window, different color themes and the settings dialog with interval, movement, transparency, always-on-top and optional auto-click settings.
-
-### Main Window, Themes and Settings
+## Screenshot
 
 ![waltrone1 Mouse-Keeper main overview](screenshots/01-main-overview.png)
+
+The screenshot shows the main Mouse-Keeper window, different color themes and the settings dialog with interval, movement, transparency, always-on-top and optional auto-click settings.
 
 ---
 
@@ -104,7 +102,7 @@ waltrone1-mouse-keeper/
 
 The `src/` folder contains the application source files, assets, icon and build-related files.
 
-The `screenshots/` folder contains the images used in this README.
+The `screenshots/` folder contains the image used in this README.
 
 Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
 
