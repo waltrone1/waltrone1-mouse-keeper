@@ -8,6 +8,16 @@ The tool is designed for users, creators, admins and technicians who want a simp
 
 ---
 
+## Screenshots
+
+The screenshot shows the main Mouse-Keeper window, different color themes and the settings dialog with interval, movement, transparency, always-on-top and optional auto-click settings.
+
+### Main Window, Themes and Settings
+
+![waltrone1 Mouse-Keeper main overview](screenshots/01-main-overview.png)
+
+---
+
 ## Features
 
 - Helps keep a Windows PC active during long-running tasks
@@ -81,7 +91,7 @@ waltrone1-mouse-keeper/
 │   └── usage.md
 │
 ├── screenshots/
-│   └── application screenshots
+│   └── 01-main-overview.png
 │
 └── src/
     ├── assets/
@@ -97,16 +107,6 @@ The `src/` folder contains the application source files, assets, icon and build-
 The `screenshots/` folder contains the images used in this README.
 
 Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
-
----
-
-## Screenshots
-
-### Main Window, Themes and Settings
-
-<p align="center">
-  <img src="screenshots/01-main-overview.png" alt="waltrone1 Mouse-Keeper main overview" width="900">
-</p>
 
 ---
 
